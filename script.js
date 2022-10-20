@@ -10,7 +10,9 @@ const eta = parseInt(prompt("Quanti anni hai?"));
 const centesimiPerKm = 0.21;
 const prezzoBigliettoPerKm = chilometri * centesimiPerKm ;
 if (eta < 18){
-    console.log(prezzoBigliettoPerKm - (prezzoBigliettoPerKm * 0.20));
+     const prezzoFinale=Math.round((prezzoBigliettoPerKm - (prezzoBigliettoPerKm * 0.20)) * 100) / 100;
+     console.log(prezzoFinale);
 }else if (eta > 65){
-    console.log(prezzoBigliettoPerKm - (prezzoBigliettoPerKm * 0.40));
+    const prezzoFinale1=Math.round((prezzoBigliettoPerKm - (prezzoBigliettoPerKm * 0.40)) * 100) / 100;
+    console.log(prezzoFinale1);
 }
